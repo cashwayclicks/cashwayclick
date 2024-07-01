@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { BrowserRouter as  Routes, Route, BrowserRouter } from "react-router-dom";
 import "./App.css";
 import Home from "./Pages/Home";
 import Legal from "./Pages/Legal";
@@ -11,8 +11,8 @@ import {MyProvider} from "./Pages/resumecontext";
 function App() {
   return (
     <div className="App">
-    <MyProvider className="App">
-      <Router basename="/cashway">
+    
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/legal" element={<Legal />} />
@@ -20,8 +20,8 @@ function App() {
           <Route path="/appointment" element={<Appointment />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
-      </Router>
-      </MyProvider>
+      </HashRouter>
+      
     </div>
   );
 }
