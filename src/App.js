@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as  Routes, Route, BrowserRouter, HashRouter } from "react-router-dom";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./Pages/Home";
 import Legal from "./Pages/Legal";
@@ -11,17 +11,14 @@ import {MyProvider} from "./Pages/resumecontext";
 function App() {
   return (
     <div className="App">
-    
-  
+      <Router basename="/Health-Plus">
         <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/legal" element={<Legal />} />
-          <Route path="/payment" element={<Payment />} />
-          <Route path="/appointment" element={<Appointment />} />
-          <Route path="*" element={<NotFound />} />
+          <Route path="/" element={<div>
+            <Home />
+            <Appointment /> </div>} />
+          
         </Routes>
-  
-      
+      </Router>
     </div>
   );
 }

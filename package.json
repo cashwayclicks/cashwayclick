@@ -1,8 +1,8 @@
 {
   "name": "cwc",
   "version": "0.1.0",
-  "private": false,
-  "homepage": "http://cashwayclicks.github.io/cwc",
+  "private": true,
+  "homepage": "http://cashwayclicks.github.io/Health-Plus/",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
     "@fortawesome/free-solid-svg-icons": "^6.4.0",
