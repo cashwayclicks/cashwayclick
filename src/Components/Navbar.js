@@ -32,8 +32,7 @@ function Navbar() {
     <div className="navbar-section">
        
        <h1 className="navbar-title">
-       <img  src={imag} className="mik-img" />
-       <span>   </span>
+
         <Link to="/">
               cashway 
         </Link>
