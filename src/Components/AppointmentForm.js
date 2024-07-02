@@ -146,7 +146,10 @@ function AppointmentForm() {
           <span> </span>
           <span> </span>
           <span> </span>
-          <button className="text-appointment-btn" onClick={handleStop}> stop🎵</button>
+          
+        </h2>
+        <h2>
+        <button className="text-appointment-btn" onClick={handleStop}> 🎵OFF</button>
         </h2>
 
         <form className="form-content" onSubmit={handleSubmit}>
