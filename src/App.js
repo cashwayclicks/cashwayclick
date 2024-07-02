@@ -7,7 +7,6 @@ import NotFound from "./Pages/NotFound";
 import Appointment from "./Pages/Appointment";
 import Payment from "./Pages/payment";
 
-
 function App() {
   return (
     <div className="App">
@@ -16,6 +15,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/legal" element={<Legal />} />
           <Route path="/appointment" element={<Appointment />} />
+          <Route path="/payment" element={<Payment />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
