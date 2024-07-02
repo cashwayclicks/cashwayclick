@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import "./App.css";
 import Home from "./Pages/Home";
 import Legal from "./Pages/Legal";
@@ -13,9 +13,9 @@ function App() {
     <div className="App">
       <Router basename="/Health-Plus">
         <Routes>
-          <Route path="/" element={<Appointment />} />
+          <Route path="/" element={<Home />} />
           <Route path="/legal" element={<Legal />} />
-          <Route path="/appointment" element={<Home />} />
+          <Route path="/appointment" element={<Appointment />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </Router>
