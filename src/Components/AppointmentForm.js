@@ -142,6 +142,10 @@ function AppointmentForm() {
       <div className="form-container">
         <h2 className="form-title">
           <span>Enter details carefully  </span>
+          <span> </span>
+          <span> </span>
+          <span> </span>
+          <span> </span>
           <button className="text-appointment-btn" onClick={handleStop}> stop🎵</button>
         </h2>
 
