@@ -6,7 +6,7 @@ import Legal from "./Pages/Legal";
 import NotFound from "./Pages/NotFound";
 import Appointment from "./Pages/Appointment";
 import Payment from "./Pages/payment";
-import {MyProvider} from "./Pages/resumecontext";
+
 
 function App() {
   return (

@@ -4,7 +4,6 @@ import { Link } from "react-router-dom";
 import "../Styles/AppointmentForm.css";
 import { ToastContainer, toast } from "react-toastify";
 import SliderComponent from "../Pages/slider";
-import {MyContext} from "../Pages/resumecontext";
 import { useNavigate  } from "react-router-dom";
 import home from "./home.mp3"
 function AppointmentForm() {
@@ -24,7 +23,6 @@ function AppointmentForm() {
   const [valo, setvalo] = useState(77);
   const [childData, setChildData] = useState(2100);
   const [minms, setminm] = useState(2100);
-  const { value, setValue,courseno,setcourseno } = useContext(MyContext);
   const audioRef = useRef(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [isButtonDisabled, setIsButtonDisabled] = useState(false);
