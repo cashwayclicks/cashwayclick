@@ -1,0 +1,18 @@
+  "name": "health-plus",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://alkaison.github.io/Health-Plus/",
+
+
+
+      <Router basename="/Health-Plus">
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/legal" element={<Legal />} />
+          <Route path="/appointment" element={<Appointment />} />
+          <Route path="*" element={<NotFound />} />
+        </Routes>
+      </Router>
+
+
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
