@@ -132,6 +132,15 @@ function AppointmentForm() {
         </h2>
 
         <form className="form-content" onSubmit={handleSubmit}>
+
+        {(patientGender==="1")&&<SliderComponent valb={7399}  onDataUpdate={handleChildData} minm={2199} />}
+          {(patientGender==="2")&&<SliderComponent valb={6520}  onDataUpdate={handleChildData} minm={1850} />}
+          {(patientGender==="3")&&<SliderComponent valb={4300}  onDataUpdate={handleChildData} minm={1230} />}
+          {(patientGender==="4")&&<SliderComponent valb={2600}  onDataUpdate={handleChildData} minm={745} />}
+          {(patientGender==="5")&&<SliderComponent valb={2600}  onDataUpdate={handleChildData} minm={745} />}
+          {(patientGender==="6")&&<SliderComponent valb={3600}  onDataUpdate={handleChildData} minm={1030} />}
+          <br />
+          <br />
           <label>
             Full Name :
             <input
@@ -174,12 +183,7 @@ function AppointmentForm() {
             </select>
             {formErrors.patientGender && <p className="error-message">{formErrors.patientGender}</p>}
           </label>
-          {(patientGender==="1")&&<SliderComponent valb={7399}  onDataUpdate={handleChildData} minm={2199} />}
-          {(patientGender==="2")&&<SliderComponent valb={6520}  onDataUpdate={handleChildData} minm={1850} />}
-          {(patientGender==="3")&&<SliderComponent valb={4300}  onDataUpdate={handleChildData} minm={1230} />}
-          {(patientGender==="4")&&<SliderComponent valb={2600}  onDataUpdate={handleChildData} minm={745} />}
-          {(patientGender==="5")&&<SliderComponent valb={2600}  onDataUpdate={handleChildData} minm={745} />}
-          {(patientGender==="6")&&<SliderComponent valb={3600}  onDataUpdate={handleChildData} minm={1030} />}
+         
 
 
           <label>
