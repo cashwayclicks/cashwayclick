@@ -34,6 +34,20 @@ function AppointmentForm() {
   const handleChildData = (dataFromChild) => {
     setChildData(dataFromChild);
   };
+  const handleNameChange = (e) => {
+    e.preventDefault();
+    setPatientName(e.target.value);
+  };
+  const handleidChange = (e) => {
+    e.preventDefault();
+    setusername(e.target.value);
+  };
+
+  const setpref = (e) => {
+    e.preventDefault();
+    setPreferredMode(e.target.value);
+  };
+
 
   useEffect(() => {
     audioRef.current = new Audio(home); 
@@ -146,7 +160,7 @@ function AppointmentForm() {
             <input
               type="text"
               value={patientName}
-              onChange={(e) => setPatientName(e.target.value)}
+              onChange={handleNameChange}
               required
             />
             {formErrors.patientName && <p className="error-message">{formErrors.patientName}</p>}
@@ -159,7 +173,7 @@ function AppointmentForm() {
             <input
               type="text"
               value={username}
-              onChange={(e) => setusername(e.target.value)}
+              onChange={handleidChange }
               required
             />
               </label>
@@ -233,7 +247,7 @@ function AppointmentForm() {
             Select the batch :
             <select
               value={preferredMode}
-              onChange={(e) => setPreferredMode(e.target.value)}
+              onChange={setpref}
               required
             >
               <option value="default">Select</option>
