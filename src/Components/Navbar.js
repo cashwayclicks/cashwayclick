@@ -51,17 +51,17 @@ function Navbar() {
           </Link>
         </li>
         <li>
-          <a href="#services" className="navbar-links">
+          <a href="/#services" className="navbar-links">
             Services
           </a>
         </li>
         <li>
-          <a href="#about" className="navbar-links">
+          <a href="/#about" className="navbar-links">
             About
           </a>
         </li>
         <li>
-          <a href="#reviews" className="navbar-links">
+          <a href="/#reviews" className="navbar-links">
             Reviews
           </a>
         </li>
