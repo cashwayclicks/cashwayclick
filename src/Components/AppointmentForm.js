@@ -157,36 +157,6 @@ function AppointmentForm() {
               
           <br />
         
-          
-        
-
-      
-
-        
-          <label>
-          provide the date you will be available to work : starting date
-            <input
-              type="datetime-local"
-              value={appointmentTime}
-              onChange={(e) => setAppointmentTime(e.target.value)}
-              required
-            />
-            {formErrors.appointmentTime && <p className="error-message">{formErrors.appointmentTime}</p>}
-          </label>
-          <label>
-          provide the date you plan to Leave : minimum Five Months Required 
-            <input
-              type="datetime-local"
-              value={appointmentTime}
-              onChange={(e) => setAppointmentTime(e.target.value)}
-              required
-            />
-            {formErrors.appointmentTime && <p className="error-message">{formErrors.appointmentTime}</p>}
-          </label>
-
-          <br /> <br /> 
-
-          
           <label>
             select course:
             <select
@@ -222,6 +192,38 @@ function AppointmentForm() {
   />
   {formErrors.patientNumber && <p className="error-message">{formErrors.patientNumber}</p>}
 </label>
+
+
+<br /><br />
+
+      
+
+        
+          <label>
+          provide the date you will be available to work : starting date
+            <input
+              type="datetime-local"
+              value={appointmentTime}
+              onChange={(e) => setAppointmentTime(e.target.value)}
+              required
+            />
+            {formErrors.appointmentTime && <p className="error-message">{formErrors.appointmentTime}</p>}
+          </label>
+          <label>
+          provide the date you plan to Leave : minimum Five Months Required 
+            <input
+              type="datetime-local"
+              value={appointmentTime}
+              onChange={(e) => setAppointmentTime(e.target.value)}
+              required
+            />
+            {formErrors.appointmentTime && <p className="error-message">{formErrors.appointmentTime}</p>}
+          </label>
+
+           <br /> 
+
+          
+         
           <br />
           <label>
             Select the batch :

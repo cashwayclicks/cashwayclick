@@ -9,9 +9,12 @@ const SliderComponent = ({ onDataUpdate,valb,minm}) => {
   const handleChange = (event) => {
     
         const newData = event.target.value;
+        event.preventDefault()
         setValue(newData);
+        event.preventDefault()
         // Call the callback function passed from the parent with new data
         onDataUpdate(newData);
+        event.preventDefault()
       ;
   };
   const sliderStyle = {
