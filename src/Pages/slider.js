@@ -31,7 +31,10 @@ const SliderComponent = ({ onDataUpdate,valb,minm}) => {
 
   return (
     <div style={{ margin: '10px' }}  className="text-appointment-btn">
-      <label htmlFor="rangeSlider">Select amount : ₹{minm} is the minimum amount if approved . actual price is ₹{valb}</label>
+    <label htmlFor="rangeSlider">   Actual price is ₹{valb} </label>
+      <label htmlFor="rangeSlider">  ₹{minm} is the minimum amount required. 
+      </label>
+      
       <br />
       <input
         type="range"
@@ -45,7 +48,7 @@ const SliderComponent = ({ onDataUpdate,valb,minm}) => {
         onChange={handleChange}
       />
       <br />
-      <p>Selected amount: {value}</p>
+      <p>Selected amount: ₹{value}</p>
     </div>
   );
 };

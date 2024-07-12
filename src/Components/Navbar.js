@@ -36,8 +36,8 @@ function Navbar() {
         <Link to="/">
               cashway 
         </Link>
-        <Link to="/"  className="mik-img">
-              clicks💸 
+        <Link to="/"  >
+             <span className="mik-img"> clicks </span>
         </Link>
         
       </h1>

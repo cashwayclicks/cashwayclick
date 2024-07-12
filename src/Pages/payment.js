@@ -1,4 +1,5 @@
 import React from "react";
+import { useEffect, useRef, useState } from "react";
 import Doctor from "../Assets/doctor-book-appointment.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import payment from "../Assets/payment.jpg";
@@ -8,6 +9,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useNavigate  } from "react-router-dom";
 import "../Styles/BookAppointment.css";
+import home from "../Components/home.mp3";
 
 function Payment() {
   const navigate = useNavigate();
@@ -15,6 +17,36 @@ function Payment() {
   const handleBookAppointmentClick = () => {
     
     navigate("/");
+  };
+  const audioRef = useRef(null);
+  const [isPlaying, setIsPlaying] = useState(false);
+  useEffect(() => {
+    audioRef.current = new Audio(home); 
+    const playAudio = async () => {
+      try {
+        await audioRef.current.play();
+        setIsPlaying(true);
+      } catch (error) {
+        console.error('Error playing the audio:', error);
+      }
+    };
+    playAudio();
+
+    // Clean up function to stop the audio when the component unmounts
+    return () => {
+      if (audioRef.current) {
+        audioRef.current.pause();
+        audioRef.current.currentTime = 0;
+      }
+    };
+  }, []);
+
+  const handleStop = () => {
+    if (audioRef.current) {
+      audioRef.current.pause();
+      audioRef.current.currentTime = 0;
+      setIsPlaying(!isPlaying);
+    }
   };
 
   return (
@@ -25,7 +57,9 @@ function Payment() {
 
       <div className="ba-text-content">
         <h3 className="ba-title">
-          <span>Gpay for Secure and Fast </span>
+          <span>Gpay for Secure and Fast <h2>
+        <button className="text-appointment-btn" onClick={handleStop}> 🎵OFF</button>
+        </h2></span>
         </h3>
         <p className="ba-description">
         Explore the advantages of choosing our core trainings for your personal and professional growth. 

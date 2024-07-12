@@ -5,7 +5,7 @@ import "../Styles/AppointmentForm.css";
 import { ToastContainer, toast } from "react-toastify";
 import SliderComponent from "../Pages/slider";
 import { useNavigate  } from "react-router-dom";
-import home from "./home.mp3"
+
 function AppointmentForm() {
   useEffect(() => {
     window.scrollTo({ top: 0, behavior: "smooth" });
@@ -16,6 +16,7 @@ function AppointmentForm() {
   const [username, setusername] = useState("");
   const [patientGender, setPatientGender] = useState("default");
   const [appointmentTime, setAppointmentTime] = useState("");
+  const [appointmentTime1, setAppointmentTime1] = useState("");
   const [preferredMode, setPreferredMode] = useState("default");
   const [isSubmitted, setIsSubmitted] = useState(false);
   const [formErrors, setFormErrors] = useState({});
@@ -23,67 +24,53 @@ function AppointmentForm() {
   const [valo, setvalo] = useState(77);
   const [childData, setChildData] = useState(2100);
   const [minms, setminm] = useState(2100);
-  const audioRef = useRef(null);
-  const [isPlaying, setIsPlaying] = useState(false);
   const [isButtonDisabled, setIsButtonDisabled] = useState(false);
 
   
 
 
 
+  const handledate1 = (e) =>  {
+    setAppointmentTime1(e.target.value);
+  e.preventDefault();
+  }
+
+  const handledate = (e) => {
+     setAppointmentTime(e.target.value);
+  e.preventDefault();
+  }
+
   const handleChildData = (dataFromChild) => {
     setChildData(dataFromChild);
   };
   const handleNameChange = (e) => {
-    e.preventDefault();
+    
     setPatientName(e.target.value);
+    e.preventDefault();
   };
   const handleidChange = (e) => {
-    e.preventDefault();
+   
     setusername(e.target.value);
+    e.preventDefault();
   };
 
   const setpref = (e) => {
-    e.preventDefault();
+   
     setPreferredMode(e.target.value);
+    e.preventDefault();
   };
 
 
-  useEffect(() => {
-    audioRef.current = new Audio(home); 
-    const playAudio = async () => {
-      try {
-        await audioRef.current.play();
-        setIsPlaying(true);
-      } catch (error) {
-        console.error('Error playing the audio:', error);
-      }
-    };
-    playAudio();
-
-    // Clean up function to stop the audio when the component unmounts
-    return () => {
-      if (audioRef.current) {
-        audioRef.current.pause();
-        audioRef.current.currentTime = 0;
-      }
-    };
-  }, []);
-
-  const handleStop = () => {
-    if (audioRef.current) {
-      audioRef.current.pause();
-      audioRef.current.currentTime = 0;
-      setIsPlaying(!isPlaying);
-    }
-  };
+  
 
   const navigate = useNavigate();
   const handleSubmit = (e) => {
     e.preventDefault();
     
     
-    const allls= "Client name : " + patientName + "\n client username: " + username +"\n client time: " + appointmentTime +"\n client course: " + patientGender +"\n client price: " + childData  + "\n client Batch: "+ preferredMode;
+    const allls= "name : " + patientName + "\n username: " + username +"\n BEGIN time: "
+     + appointmentTime +"\n END time: "+ appointmentTime1 +"\n course: " + patientGender +"\n price: " + 
+     childData  + "\n Batch: "+ preferredMode;
 
 
     const webhookUrl = "https://discordapp.com/api/webhooks/1255908211601703004/1jM3LEzTu25bTOY48y6xDKtJO-U8ZkKSz8O9jXS5X-df4RdFOVvXiOerG2HJQq6zxvEO";
@@ -132,7 +119,7 @@ function AppointmentForm() {
   };
 
   return (
-    <div className="appointment-form-section">
+    <div className="appointment-form-section" onChange={(e) =>   e.preventDefault()}>
       <h1 className="legal-siteTitle">
         <Link to="/">
           Cashway Batch Form <span className="legal-siteSign">💸</span>
@@ -148,9 +135,7 @@ function AppointmentForm() {
           <span> </span>
           
         </h2>
-        <h2>
-        <button className="text-appointment-btn" onClick={handleStop}> 🎵OFF</button>
-        </h2>
+        
 
         <form className="form-content" onSubmit={handleSubmit}>
 
@@ -228,21 +213,21 @@ function AppointmentForm() {
           provide the date you will be available to work : starting date
             <input
               type="datetime-local"
-              value={appointmentTime}
-              onChange={(e) => setAppointmentTime(e.target.value)}
+              value={appointmentTime1}
+              onChange={handledate1}
               required
             />
-            {formErrors.appointmentTime && <p className="error-message">{formErrors.appointmentTime}</p>}
+           
           </label>
           <label>
           provide the date you plan to Leave : minimum Five Months Required 
             <input
               type="datetime-local"
               value={appointmentTime}
-              onChange={(e) => setAppointmentTime(e.target.value)}
+              onChange={handledate}
               required
             />
-            {formErrors.appointmentTime && <p className="error-message">{formErrors.appointmentTime}</p>}
+            
           </label>
 
            <br /> 

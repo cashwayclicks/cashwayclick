@@ -38,7 +38,7 @@ function Hero() {
         <div className="text-section">
           <p className="text-headline">💙 Together We Grow</p>
           <h2 className="text-title">
-            Grow your passion in Tech and Drill Financial Freedom.
+          Keep progressing  Keep earning💸
           </h2>
           <p className="text-descritpion">
           Explore our core training programs and consult with our coordinators for personalized guidance on your journey 
@@ -55,7 +55,7 @@ function Hero() {
           </button>
           <div className="text-stats">
             <div className="text-stats-container">
-              <p>920+</p>
+              <p>1920+</p>
               <p>successful trainings</p>
             </div>
 

@@ -4,7 +4,7 @@
     justify-content: space-between;
     align-items: center;
     height: 80px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(104, 232, 106);
 }
 .navbar-title a {
     color: #fafafa;
@@ -72,12 +72,18 @@
     color: #0cc2ea;
 }
 .mik-img{
-    padding-left: 5px;
+    color: #1d00f7;
+    padding-left: 0px;
     padding-top: 20px;
     width: 60px;
     height: 60px;
-  
-    
+    font-family: 'Lucida Handwriting', Cursive;
+
+
+
+
+
+
 }
 .mik-imgs{
 
