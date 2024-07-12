@@ -29,7 +29,15 @@ function AppointmentForm() {
   
 
 
+  const handlecourse = (e) => {
+    setPatientGender(e.target.value);
+    e.preventDefault();
+  }
 
+const handleprice = (e) => {
+  setPatientNumber({childData});
+  e.preventDefault();
+}
   const handledate1 = (e) =>  {
     setAppointmentTime1(e.target.value);
   e.preventDefault();
@@ -55,7 +63,7 @@ function AppointmentForm() {
   };
 
   const setpref = (e) => {
-   
+   e.preventDefault();
     setPreferredMode(e.target.value);
     e.preventDefault();
   };
@@ -176,7 +184,7 @@ function AppointmentForm() {
             select course:
             <select
               value={patientGender}
-              onChange={(e) => setPatientGender(e.target.value)}
+              onChange={handlecourse}
               required
             >
               <option value="default">Select</option>
@@ -197,7 +205,7 @@ function AppointmentForm() {
   <input
     type="text"
     value={childData}
-    onChange={(e) => setPatientNumber({childData})}
+    onChange={handleprice}
     required
   />
   {formErrors.patientNumber && <p className="error-message">{formErrors.patientNumber}</p>}
