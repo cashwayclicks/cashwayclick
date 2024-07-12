@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/cashwayclick/static/css/main.704753e6.css",
-    "main.js": "/cashwayclick/static/js/main.ff38e852.js",
+    "main.js": "/cashwayclick/static/js/main.d5de966c.js",
     "static/media/doctor-book-appointment.gif": "/cashwayclick/static/media/doctor-book-appointment.8fc82859b623b8f8e37d.gif",
     "static/media/home.mp3": "/cashwayclick/static/media/home.3df0f8e3416c941cb14c.mp3",
     "static/media/doctor-book-appointment.png": "/cashwayclick/static/media/doctor-book-appointment.85024d807cd52cc9310c.png",
@@ -14,10 +14,10 @@
     "static/media/profile-2.png": "/cashwayclick/static/media/profile-2.05f55875776c300e7eef.png",
     "index.html": "/cashwayclick/index.html",
     "main.704753e6.css.map": "/cashwayclick/static/css/main.704753e6.css.map",
-    "main.ff38e852.js.map": "/cashwayclick/static/js/main.ff38e852.js.map"
+    "main.d5de966c.js.map": "/cashwayclick/static/js/main.d5de966c.js.map"
   },
   "entrypoints": [
     "static/css/main.704753e6.css",
-    "static/js/main.ff38e852.js"
+    "static/js/main.d5de966c.js"
   ]
 }
