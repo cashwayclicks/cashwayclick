@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/cashwayclicks/static/css/main.704753e6.css",
-    "main.js": "/cashwayclicks/static/js/main.d39bb9ef.js",
-    "static/media/doctor-book-appointment.gif": "/cashwayclicks/static/media/doctor-book-appointment.8fc82859b623b8f8e37d.gif",
-    "static/media/home.mp3": "/cashwayclicks/static/media/home.3df0f8e3416c941cb14c.mp3",
-    "static/media/doctor-book-appointment.png": "/cashwayclicks/static/media/doctor-book-appointment.85024d807cd52cc9310c.png",
-    "static/media/doctor-picture.jpg": "/cashwayclicks/static/media/doctor-picture.56434f1447cd8700ae2a.jpg",
-    "static/media/profile-4.jpg": "/cashwayclicks/static/media/profile-4.422b336961e8ea03b233.jpg",
-    "static/media/payment.jpg": "/cashwayclicks/static/media/payment.6102420bfaeed2c0c110.jpg",
-    "static/media/profile-1.jpg": "/cashwayclicks/static/media/profile-1.392e4e76604ef358d882.jpg",
-    "static/media/profile-3.png": "/cashwayclicks/static/media/profile-3.6d3fcce01cf753bd568b.png",
-    "static/media/log.png": "/cashwayclicks/static/media/log.0d00a038f6f6fed4880f.png",
-    "static/media/profile-2.png": "/cashwayclicks/static/media/profile-2.05f55875776c300e7eef.png",
-    "index.html": "/cashwayclicks/index.html",
-    "main.704753e6.css.map": "/cashwayclicks/static/css/main.704753e6.css.map",
-    "main.d39bb9ef.js.map": "/cashwayclicks/static/js/main.d39bb9ef.js.map"
+    "main.css": "/cashwayclick/static/css/main.704753e6.css",
+    "main.js": "/cashwayclick/static/js/main.51b91f2a.js",
+    "static/media/doctor-book-appointment.gif": "/cashwayclick/static/media/doctor-book-appointment.8fc82859b623b8f8e37d.gif",
+    "static/media/home.mp3": "/cashwayclick/static/media/home.3df0f8e3416c941cb14c.mp3",
+    "static/media/doctor-book-appointment.png": "/cashwayclick/static/media/doctor-book-appointment.85024d807cd52cc9310c.png",
+    "static/media/doctor-picture.jpg": "/cashwayclick/static/media/doctor-picture.56434f1447cd8700ae2a.jpg",
+    "static/media/profile-4.jpg": "/cashwayclick/static/media/profile-4.422b336961e8ea03b233.jpg",
+    "static/media/payment.jpg": "/cashwayclick/static/media/payment.6102420bfaeed2c0c110.jpg",
+    "static/media/profile-1.jpg": "/cashwayclick/static/media/profile-1.392e4e76604ef358d882.jpg",
+    "static/media/profile-3.png": "/cashwayclick/static/media/profile-3.6d3fcce01cf753bd568b.png",
+    "static/media/log.png": "/cashwayclick/static/media/log.0d00a038f6f6fed4880f.png",
+    "static/media/profile-2.png": "/cashwayclick/static/media/profile-2.05f55875776c300e7eef.png",
+    "index.html": "/cashwayclick/index.html",
+    "main.704753e6.css.map": "/cashwayclick/static/css/main.704753e6.css.map",
+    "main.51b91f2a.js.map": "/cashwayclick/static/js/main.51b91f2a.js.map"
   },
   "entrypoints": [
     "static/css/main.704753e6.css",
-    "static/js/main.d39bb9ef.js"
+    "static/js/main.51b91f2a.js"
   ]
 }
