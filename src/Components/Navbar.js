@@ -29,18 +29,13 @@ function Navbar() {
   };
 
   return (
-    <div className="navbar-section">
+    
        
-       <h1 className="navbar-title">
-
-        <Link to="/">
-              cashway 
-        </Link>
-        <Link to="/"  >
-             <span className="mik-img"> clicks </span>
-        </Link>
-        
-      </h1>
+       <div className="ft-info-p1">
+            <p className="ft-title">
+              cashway <span className="ft-sign">clicks</span>
+            </p>
+            
       
 
       {/* Desktop */}

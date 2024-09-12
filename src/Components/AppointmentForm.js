@@ -130,7 +130,7 @@ const handleprice = (e) => {
     <div className="appointment-form-section" onChange={(e) =>   e.preventDefault()}>
       <h1 className="legal-siteTitle">
         <Link to="/">
-          Cashway Batch Form <span className="legal-siteSign">💸</span>
+          Cashway Batch Form <span className="legal-siteSign"></span>
         </Link>
       </h1>
 
